@@ -1,9 +1,13 @@
 import * as React from "react"
 import '../styles/home.css'
 
+// Import Components
+import Header from '../components/header'
 
 const IndexPage = () => (
-  <p className='text-center text-4xl header-title flex-row-reverse'>Home Page</p>
+ <div>
+   <Header />
+ </div>
 )
 
 export default IndexPage
