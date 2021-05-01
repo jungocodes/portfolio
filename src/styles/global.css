@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #fff;
-    --secondary-color: #000;
-    --accent-one: #83333e;
+    --primary-color: #111111;
+    --secondary-color: #452475;
+    --accent-one: #2b2b2be;
     --accent-two: #f2f4f5;
 
     /* Font */
@@ -12,7 +12,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html, body{
+body{
     font-family: var(--font);
+    background-color: var(--accent-two);
+    color: var(--primary-color);
 }
