@@ -1,0 +1,12 @@
+.focused-title {
+    color: var(--secondary-color)
+  }
+  .divider {
+    background-color: var(--secondary-color);
+  }
+  .social-icons > svg {
+    fill: var(--accent-one);
+  }
+  .social-icons:hover > svg {
+    fill: var(--secondary-color);
+  }

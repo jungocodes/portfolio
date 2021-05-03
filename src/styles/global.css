@@ -1,7 +1,7 @@
 :root {
     --primary-color: #111111;
     --secondary-color: #452475;
-    --accent-one: #2b2b2be;
+    --accent-one: #2b2b2b;
     --accent-two: #f2f4f5;
 
     /* Font */
@@ -16,4 +16,10 @@ body{
     font-family: var(--font);
     background-color: var(--accent-two);
     color: var(--primary-color);
+}
+button {
+  background-color: var(--secondary-color);
+}
+button:hover {
+  background-color: var(--accent-one);
 }
