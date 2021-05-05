@@ -3,12 +3,12 @@ import '../styles/main.css'
 
 // Import Components
 import Profile from '../components/profile'
-// import Banner from '../components/banner'
+import Portfolio from '../components/portfolio'
 
 const IndexPage = () => (
  <div>
    <Profile />
-   {/* <Banner /> */}
+   <Portfolio />
  </div>
 )
 
