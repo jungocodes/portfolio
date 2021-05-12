@@ -6,7 +6,7 @@ import Profile from '../components/profile'
 import Portfolio from '../components/portfolio'
 
 const IndexPage = () => (
- <div>
+ <div className='wrapper'>
    <Profile />
    <Portfolio />
  </div>
