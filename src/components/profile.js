@@ -11,6 +11,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import CodeIcon from "@material-ui/icons/Code"
 import MailIcon from "@material-ui/icons/Mail"
+import ForumIcon from '@material-ui/icons/Forum';
 
 import "../styles/main.css"
 
@@ -30,7 +31,9 @@ const Profile = () => {
 <div className="profile">
       <div className="profile__content">
         <h1 className="profile__title">
+          <Link to='/'>
           <span>Jungo</span> Codes
+          </Link>
         </h1>
         <h4 className="profile__desc">Front-End Developer</h4>
         <div className="divider"></div>
@@ -45,6 +48,9 @@ const Profile = () => {
         <div className="profile__btns">
         <Button variant="contained" className='profile__btn'>
         <MailIcon /> Hire Me
+        </Button>
+        <Button variant="contained" className='profile__btn' href='#portfolio'>
+        <CodeIcon /> Portfolio
         </Button>
 
 
@@ -109,7 +115,7 @@ const Profile = () => {
             title="Semicolon"
             className="social-icons "
           >
-            <CodeIcon />
+            <ForumIcon />
           </Link>{" "}
           {/* End of Semicolon */}
         </div>

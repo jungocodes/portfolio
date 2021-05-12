@@ -41,7 +41,7 @@
   letter-spacing: 2px;
   text-align: center;
 }
-.profile__title > span {
+.profile__title > a > span {
   color: var(--secondary-color);
 }
 .profile__desc {
@@ -62,12 +62,14 @@
 }
 .profile__btns {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 0 1rem;
 }
 .profile__btns .MuiButton-contained{
    /* Individual Button inside of Profile About Section */
   background-color: var(--secondary-color);
   color: var(--accent-two);
+  margin: .5rem 0;
 
 }
 .profile__btn .MuiButton-label {
@@ -91,6 +93,13 @@
 }
 .social-icons >.MuiSvgIcon-root:active {
   fill: var(--accent-one) !important;
+}
+/* Portfolio Section */
+.portfolio__container {
+  height: 100vh;
+}
+.portfolio__title {
+  visibility: hidden;
 }
 
 @media (min-width: 640px) {
@@ -147,11 +156,17 @@
       margin-top: 1rem;
     }
     .profile__btns {
-      justify-content: flex-start;
+      margin: 0 auto;
+      flex-direction: row;
+    }
+    .profile__btns .MuiButton-contained {
+      justify-content: space-evenly;
+      margin-right: 3rem;
     }
     .profile__btns .MuiButton-contained:hover {
       background-color: var(--accent-one);
     }
+
     .profile__btn .MuiButton-label {
       padding: .3rem;
   }
