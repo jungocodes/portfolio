@@ -33,14 +33,14 @@ const Portfolio = () => {
   return (
     <div className="portfolio__container">
 
-<div className="portfolio">
+
         <h2 className="portfolio__title">
           <Link id='portfolio'>
           Recent Work
           </Link>
         </h2>
 
-    </div>
+
 
       <div className="portfolio__projects">
           {/* Project One */}
