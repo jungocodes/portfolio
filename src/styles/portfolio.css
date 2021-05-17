@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #111111;
+    --secondary-color: #452475;
+    --accent-one: #2b2b2b;
+    --accent-two: #f2f4f5;
+
+    /* Font */
+    --font: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /* @media (min-width: 640px) { ... }
+
+
+     @media (min-width: 768px) { ... }
+
+
+      @media (min-width: 1024px) { ... }
+
+      @media (min-width: 1280px) { ... }
+       @media (min-width: 1536px) { ... } */
+  }
+  /* Portfolio Section */
+  .portfolio__container {
+    height: 100vh;
+  }
+  .portfolio__title {
+    visibility: hidden;
+  }
+  .portfolio__projects {
+    width: 100vw;
+    /* margin-top: -3rem; */
+  }
+  .MuiPaper-root.MuiCard-root.projects.MuiPaper-elevation5.MuiPaper-rounded{
+    /* Individual cards */
+    margin: 1rem 0;
+  }
+  .card__content.MuiCardContent-root {
+    background-color: var(--accent-two);
+    color: var(--accent-one);
+    margin-top: -1rem;
+    line-height: 1.5;
+  }
+  .card__content h2 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .card__content p {
+   font-size: 1.1rem;
+  }
+  .project__btns.MuiCardActions-root {
+    background-color: var(--secondary-color);
+  }
+  .project__btns{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .project__btns .MuiSvgIcon-root {
+    color: var(--accent-two);
+    margin-right: .5rem;
+  }
+  .project__btns > a {
+    color: var(--accent-two);
+  }
+
+
+   @media (min-width: 768px) {
+     .divider {
+       width: 18%;
+     }
+    }
+    @media (min-width: 900px) {
+      .portfolio__projects {
+        padding: 1rem 2rem;
+      }
+       .small__showcase {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+
+       }
+       .small__showcase > .MuiPaper-root.MuiCard-root.projects.MuiPaper-elevation5.MuiPaper-rounded {
+         margin-right: 1rem;
+       }
+       .project__btns.MuiCardActions-root {
+        padding: 1rem;
+    }
+
+     }
+    @media (min-width: 1024px) {
+
+      .portfolio__container {
+        position: relative;
+        top: -15rem;
+
+    }
+    .portfolio__projects {
+      width: 83vw;
+    }
+    }
+    @media (min-width: 1280px) {
+
+      .portfolio__container {
+        top: -7rem;
+      }
+     }
+
+

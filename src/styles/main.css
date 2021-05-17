@@ -25,239 +25,17 @@
   align-items: center;
      margin: 3rem auto;
     padding: 0 2rem;
+    /* height: 200vh; */
 }
 
-/* Profile Content Section */
-.profile__container {
-  display: flex;
-  flex-direction: column-reverse;
-  min-height: 100%;
-
-  /* margin-bottom: 10rem; */
-}
-.profile__title {
-  font-size: 3rem;
-  letter-spacing: 2px;
-  text-align: center;
-}
-.profile__title > a > span {
-  color: var(--secondary-color);
-}
-.profile__desc {
-  color: var(--accent-one);
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 1rem;
-}
-.divider {
-  border-bottom: 5px solid var(--secondary-color);
-  width: 30%;
-  margin: .8rem auto;
-}
-.profile__about {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.3rem;
-}
-.profile__btns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.profile__btns .MuiButton-contained{
-   /* Individual Button inside of Profile About Section */
-  background-color: var(--secondary-color);
-  color: var(--accent-two);
-  margin: .5rem 0;
-
-}
-.profile__btn .MuiButton-label {
-  /* Inside of Button  */
-  padding: .8rem;
-
-}
-.profile__btn .MuiSvgIcon-root {
-  font-size: 1.5rem;
-  margin-right: .3rem;
-}
-/* Profile Imaga Section */
-.social__profiles {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 1rem;
-}
-.social-icons .MuiSvgIcon-root {
-  font-size: 2rem;
-  fill: var(--accent-one);
-}
-.social-icons >.MuiSvgIcon-root:active {
-  fill: var(--accent-one) !important;
-}
-/* Portfolio Section */
-.portfolio__container {
-  height: 100vh;
-}
-.portfolio__title {
-  visibility: hidden;
-}
-.portfolio__projects {
-  width: 100vw;
-  /* margin-top: -3rem; */
-}
-.MuiPaper-root.MuiCard-root.projects.MuiPaper-elevation5.MuiPaper-rounded{
-  /* Individual cards */
-  margin: 1rem 0;
-}
-.card__content.MuiCardContent-root {
-  background-color: var(--accent-two);
-  color: var(--accent-one);
-  margin-top: -1rem;
-  line-height: 1.5;
-}
-.card__content h2 {
-  color: var(--secondary-color);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.card__content p {
- font-size: 1.1rem;
-}
-.project__btns.MuiCardActions-root {
-  background-color: var(--secondary-color);
-}
-.project__btns{
-  display: flex;
-  justify-content: space-evenly;
-
-}
-.project__btns .MuiSvgIcon-root {
-  color: var(--accent-two);
-  margin-right: .5rem;
-}
-.project__btns > a {
-  color: var(--accent-two);
-}
-
-@media (min-width: 640px) {
-
-
-  .profile__content {
-    margin-top: -1rem;
-}
-  .profile__about {
-    margin-top: 2rem;
-}
-  .profile__image {
-    margin: 0 auto;
-}
-.social__profiles {
-  position: relative;
-  top: -2rem;
-}
- }
-
- @media (min-width: 768px) {
-   .divider {
-     width: 18%;
-   }
-  }
-  @media (min-width: 900px) {
-    .portfolio__projects {
-      padding: 1rem 2rem;
-    }
-     .small__showcase {
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-
-     }
-     .small__showcase > .MuiPaper-root.MuiCard-root.projects.MuiPaper-elevation5.MuiPaper-rounded {
-       margin-right: 1rem;
-     }
-     .project__btns.MuiCardActions-root {
-      padding: 1rem;
-  }
-
-   }
   @media (min-width: 1024px) {
     .wrapper {
       width: 100%;
       padding: 0 3rem;
     }
-    .profile__container {
-      flex-direction: row;
-      justify-content: space-evenly;
-      min-height: 100vh;
-      justify-content: center;
-      align-items: center;
-      top: 0;
-      /* margin-right: 1rem; */
-      padding: 0 4rem;
-    }
-    .profile{
-      width: 100%;
-    }
-    .profile__title,
-    .profile__desc,
-    .profile__about {
-      text-align: left;
-    }
-    .divider {
-      margin: .5rem 1rem 0 0;
-    }
-    .profile__about {
-      font-size: 1.1rem;
-      margin-top: 1rem;
-    }
-    .profile__btns {
-      margin: 0 auto;
-      flex-direction: row;
-    }
-    .profile__btns .MuiButton-contained {
-      justify-content: space-evenly;
-      margin-right: 3rem;
-    }
-    .profile__btns .MuiButton-contained:hover {
-      background-color: var(--accent-one);
-    }
-
-    .profile__btn .MuiButton-label {
-      padding: .3rem;
-  }
-    .profile__image {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0;
-      position: relative;
-    left: 3.5rem;
-    }
-    .social-icons {
-      margin-right: 1rem;
-    }
-    .social-icons >.MuiSvgIcon-root:hover {
-      fill: var(--secondary-color) !important;
-    }
-    .portfolio__container {
-      position: relative;
-      top: -15rem;
 
   }
-  .portfolio__projects {
-    width: 83vw;
-  }
-  }
-  @media (min-width: 1280px) {
 
-    .profile__image {
-      width: 70%;
-      margin-bottom: 3rem;
-    }
-    .portfolio__container {
-      top: -7rem;
-    }
-   }
    @media (min-width: 1380px) {
      .wrapper {
       padding: 0 8rem;
@@ -268,24 +46,13 @@
      .wrapper {
         padding: 0 13rem;
      }
-    .profile__title {
-      font-size: 3.5rem;
-    }
 
-    .profile__about {
-      font-size: 1.3rem;
-    }
    }
    @media (min-width: 1900px) {
     .wrapper {
       padding: 0 22rem;
     }
-    .profile__title {
-      font-size: 5rem;
-    }
-    .profile__desc {
-      font-size: 1.3rem;
-    }
+
 
 
    }

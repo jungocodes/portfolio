@@ -1,6 +1,6 @@
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -13,23 +13,10 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 import WebIcon from '@material-ui/icons/Web';
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 
-import "../styles/main.css"
+import "../styles/portfolio.css"
 
 const Portfolio = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      PortfolioOne: file(relativePath: { eq: "PortfolioOne.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      },
-      ProjectTwo: file(relativePath: { eq: "BannerTwo.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: CONSTRAINED)
-        }
-      }
-    }
-  `)
+
   return (
     <div className="portfolio__container">
 
@@ -47,7 +34,7 @@ const Portfolio = () => {
       <Card elevation={5} className='projects feature'>
       <CardActionArea href='http://google.com'>
         <CardMedia className='card__img' >
-        <GatsbyImage image={data.PortfolioOne.childImageSharp.gatsbyImageData} />
+       <StaticImage src='../images/PortfolioOne.png' />
         </CardMedia>
         <CardContent className='card__content'>
           <h2>
@@ -76,7 +63,7 @@ const Portfolio = () => {
     <Card elevation={5} className='projects'>
       <CardActionArea>
         <CardMedia className='card__img'>
-        <GatsbyImage image={data.ProjectTwo.childImageSharp.gatsbyImageData} />
+        <StaticImage src='../images/BannerOne.jpeg' />
         </CardMedia>
         <CardContent className='card__content'>
           <h2>
@@ -104,7 +91,7 @@ const Portfolio = () => {
     <Card elevation={5} className='projects'>
       <CardActionArea>
         <CardMedia className='card__img'>
-        <GatsbyImage image={data.ProjectTwo.childImageSharp.gatsbyImageData} />
+        <StaticImage src='../images/BannerOne.jpeg' />
         </CardMedia>
         <CardContent className='card__content'>
           <h2>
