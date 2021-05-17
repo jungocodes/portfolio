@@ -19,12 +19,23 @@
        @media (min-width: 1536px) { ... } */
   }
   /* Portfolio Section */
-  .portfolio__container {
-    height: 100vh;
-  }
-  .portfolio__title {
-    visibility: hidden;
-  }
+.portfolio__container {
+  margin-bottom: 2rem;
+}
+.portfolio__content {
+  margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    /* margin-top: 4rem; */
+}
+.portfolio__content > h2 {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+  color: var(--secondary-color);
+}
+.portfolio__content > h4 {
+  color: var(--accent-one);
+}
   .portfolio__projects {
     width: 100vw;
     /* margin-top: -3rem; */
@@ -38,6 +49,8 @@
     color: var(--accent-one);
     margin-top: -1rem;
     line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
   }
   .card__content h2 {
     color: var(--secondary-color);
@@ -73,6 +86,9 @@
       .portfolio__projects {
         padding: 1rem 2rem;
       }
+      .feature.MuiPaper-root.MuiCard-root.projects.MuiPaper-elevation5.MuiPaper-rounded {
+        margin: 1rem 1rem;
+    }
        .small__showcase {
          display: flex;
          flex-direction: row;
@@ -80,7 +96,7 @@
 
        }
        .small__showcase > .MuiPaper-root.MuiCard-root.projects.MuiPaper-elevation5.MuiPaper-rounded {
-         margin-right: 1rem;
+         margin: 1rem 1rem;
        }
        .project__btns.MuiCardActions-root {
         padding: 1rem;
@@ -91,7 +107,8 @@
 
       .portfolio__container {
         position: relative;
-        top: -15rem;
+        top: 0;
+        padding: 0 4rem;
 
     }
     .portfolio__projects {
@@ -103,6 +120,14 @@
       .portfolio__container {
         top: -7rem;
       }
+     }
+     @media (min-width: 1536px) {
+       .portfolio__content {
+        margin-top: 1rem;
+       }
+      .portfolio__content > h2 {
+        font-size: 3.5rem;
+    }
      }
 
 

@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Card from '@material-ui/core/Card';
@@ -21,11 +20,14 @@ const Portfolio = () => {
     <div className="portfolio__container">
 
 
-        <h2 className="portfolio__title">
-          <Link id='portfolio'>
-          Recent Work
-          </Link>
+<div className="portfolio__content">
+        <h4>
+         My recent
+        </h4>
+        <h2>
+          Portfolio
         </h2>
+        </div>
 
 
 

@@ -2,8 +2,6 @@ import * as React from "react"
 import  {Link}  from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Button from "@material-ui/core/Button"
-
 import TwitterIcon from "@material-ui/icons/Twitter"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import InstagramIcon from "@material-ui/icons/Instagram"

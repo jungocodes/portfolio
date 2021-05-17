@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+
 import TextField from "@material-ui/core/TextField"
 import Button from '@material-ui/core/Button';
 
@@ -24,7 +25,7 @@ const contact = () => {
           <span>Work</span> Together
         </h2>
         <p>Tell me about your needs, and let's start working together on the best solution for your users and business.</p>
-        </div>
+
         <div className="social__profiles digital__footprint">
           <div className='contact__content'>
           <h3>
@@ -34,8 +35,9 @@ const contact = () => {
           <span>Let's</span> Connect
         </h2>
           </div>
+          <div className="social__profiles contact__social">
           <Link
-            to="http://twitter.com/"
+            to="http://t witter.com/"
             target="_blank"
             alt="Twitter Profile"
             title="Twitter"
@@ -83,7 +85,10 @@ const contact = () => {
           >
             <ForumIcon />
           </Link>{" "}
+          </div>
         </div>
+        </div>
+
       <form noValidate autoComplete="on" >
       <TextField
     id="outlined-secondary"
