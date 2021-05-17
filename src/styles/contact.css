@@ -131,6 +131,10 @@
     .contact__content > h2 {
       font-size: 3.5rem;
   }
+
+.contact__content p {
+  font-size: 1.3rem;
+}
   .digital__footprint {
     margin-top: 1rem;
 }
