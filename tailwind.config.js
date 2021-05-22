@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     colors: {
       // Build your palette here
-      primaryColor: '#111111',
-      secondaryColor: '#452475',
-      mainAccent:'#2b2b2b',
-      accentColor: '#f2f4f5',
+      default: '#333333',
+      primaryColor: '#e3e3e3',
+      secondaryColor: '#c60021',
+      mainAccent:'#f6f6f8',
+      accentColor: '#bdbcbd',
 
     }
   },

@@ -1,13 +1,7 @@
 import * as React from "react"
 import  {Link}  from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
-import TwitterIcon from "@material-ui/icons/Twitter"
-import FacebookIcon from "@material-ui/icons/Facebook"
-import InstagramIcon from "@material-ui/icons/Instagram"
-import LinkedInIcon from "@material-ui/icons/LinkedIn"
-import GitHubIcon from "@material-ui/icons/GitHub"
-import ForumIcon from "@material-ui/icons/Forum"
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaGithubAlt, FaTerminal } from "react-icons/fa";
 
 
 
@@ -24,17 +18,19 @@ import "../styles/main.css"
 
 function IndexPage() {
   return (
-    <div className="container mx-auto">
-      <div className="flex flex-col">
-        <div className="profile__content">
-          <h1 className="profile__title">
+    // Container
+    <div className="flex flex-col">
+      {/* About Content */}
+       <div className="order-last mx-4 text-center -mt-4">
+        <h1 className='text-4xl font-bold tracking-wider'>
             <Link id="back-to-top-anchor">
-             <span>Jungo</span> Codes
+
+             <span className='text-secondaryColor'>Jungo</span> Codes
             </Link>
           </h1>
-          <h4 className="profile__desc">Front-End Developer</h4>
-          <div className="divider"></div>
-          <p className="profile__about">
+          <h4 className="py-2 tracking-wider">Front-End Developer</h4>
+          <div class="w-12 h-1 bg-secondaryColor rounded mt-2 mb-4 mx-auto"></div>
+          <p className="leading-normal text-lg">
             Meggings portland fingerstache lyft, post-ironic fixie m mi umami
             everyday carry hexagon locavore art party. Locavore small batch
             listicle g m-to-table lumbersexual salvia messenger g book flannel
@@ -42,63 +38,65 @@ function IndexPage() {
             normcore meh butcher.
           </p>
 
-          <div className="social__profiles">
+          <div className="mt-4 flex justify-evenly text-xl ">
           <Link
             to="http://twitter.com/"
             target="_blank"
             alt="Twitter Profile"
             title="Twitter"
-            className="social-icons"
+            className="rounded-full bg-accentColor p-2 text-mainAccent"
           >
-            <TwitterIcon />
+            <FaTwitter />
           </Link>{" "}
           <Link
             to="http://linkedin.com/"
             target="_blank"
             title="Linkedin"
-            className="social-icons"
+            className="rounded-full bg-accentColor p-2 text-mainAccent"
           >
-            <LinkedInIcon />
+            <FaLinkedinIn/>
           </Link>{" "}
           <Link
             to="http://facebook.com/"
             target="_blank"
             title="Facebook"
-            className="social-icons"
+            className="rounded-full bg-accentColor p-2 text-mainAccent"
           >
-            <FacebookIcon />
+            <FaFacebookF />
           </Link>{" "}
           <Link
             to="http://instagram.com/"
             target="_blank"
             title="Instagram"
-            className="social-icons"
+            className="rounded-full bg-accentColor p-2 text-mainAccent"
           >
-            <InstagramIcon />
+            <FaInstagram />
           </Link>{" "}
           <Link
             to="http://github.com/"
             target="_blank"
             title="Github"
-            className="social-icons"
+            className="rounded-full bg-accentColor p-2 text-mainAccent"
           >
-            <GitHubIcon />
+            <FaGithubAlt />
           </Link>{" "}
           <Link
             to="http://semicolon.dev/"
             target="_blank"
             title="Semicolon"
-            className="social-icons "
+            className=" rounded-full bg-accentColor p-2 text-mainAccent"
           >
-            <ForumIcon />
+            <FaTerminal />
           </Link>{" "}
         </div>
-        </div>
+
       </div>
 
-      <div className="flex">
+      <div className="">
         <StaticImage src='../images/Shadow.png' />
       </div>
+
+
     </div>
   )
 }
