@@ -31,7 +31,7 @@ const ClientTwo = () => {
           target="_blank"
           alt="Project Repo"
           title="Github"
-          className=" p-2 text-secondaryColor flex items-center uppercase"
+          className=" p-2 text-secondaryColor flex items-center uppercase lg:hover:text-default"
         >
           <FaGithubAlt className='mr-3 text-lg'/>Code
         </Link>{" "}
@@ -39,7 +39,7 @@ const ClientTwo = () => {
           to="http://linkedin.com/"
           target="_blank"
           title="Live Preview"
-          className=" p-2 text-secondaryColor flex items-center uppercase"
+          className=" p-2 text-secondaryColor flex items-center uppercase lg:hover:text-default"
         >
           <FaEye className='mr-3 text-lg'/>Live
         </Link>
@@ -47,7 +47,7 @@ const ClientTwo = () => {
           to="http://linkedin.com/"
           target="_blank"
           title="About Project"
-          className=" p-2 text-secondaryColor flex items-center uppercase"
+          className=" p-2 text-secondaryColor flex items-center uppercase lg:hover:text-default"
         >
           <FaReadme className='mr-3 text-lg'/>Read
         </Link>
