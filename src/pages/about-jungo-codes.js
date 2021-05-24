@@ -12,14 +12,7 @@ import {
 
 const JungoArticle = () => (
   <div className="flex flex-wrap -mx-1 h-auto lg:w-full xl:w-10/12 xl:mx-auto">
-    <Link
-      to="http://instagram.com/"
-      target="_blank"
-      title="Instagram"
-      className="rounded-full bg-secondaryColor p-2 mx-auto text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 xl:mr-4  2xl:mr-6"
-    >
-      <FaArrowLeft />
-    </Link>{" "}
+
     <div className=" my-1 px-1 lg:my-4 lg:px-4 ">
       <article className="bg-mainAccent  overflow-hidden rounded-lg shadow-lg">
         {/* Feature Image */}
@@ -30,7 +23,7 @@ const JungoArticle = () => (
         />
 
         <header className="flex flex-col items-center justify-center leading-tight p-4 md:p-6">
-          <h1 className="font-bold text-3xl   lg:px-10 lg:mb-0">
+          <h1 className="font-bold text-3xl   lg:px-10 lg:mb-0 lg:text-6xl">
             <span className="text-secondaryColor">Jungo</span> Codes
           </h1>
           <h2 className="py-2 tracking-wider">Simplicity Was The Goal</h2>
@@ -41,7 +34,7 @@ const JungoArticle = () => (
 
         {/* Article Content */}
         <div className=" px-4  flex flex-col items-center -z-50 md:px-6 lg:px-14   xl:mb-4">
-          <div className=" mb-4 text-default py-1 px-4 text-lg leading-relaxed  lg:px-10 lg:w-10/12  xl:px-20 2xl:px-28 ">
+          <div className=" mb-4 text-default py-1 px-4 text-lg leading-relaxed  lg:px-10 lg:w-10/12  xl:px-20 2xl:px-0 2xl:w-8/12 ">
             <p className='xl:-mb-4'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
               eveniet, dolorum voluptas incidunt, ipsam aut perferendis nam
@@ -120,6 +113,12 @@ const JungoArticle = () => (
           </div>
         </footer>
       </article>
+      <Link to='/' class="py-2 mt-4 mx-auto flex justify-center items-center   bg-secondaryColor hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-mainAccent w-1/12 transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none  rounded xl:sticky">
+
+<FaArrowLeft className='mr-2' />
+Home
+</Link>
+
     </div>
   </div>
 )
