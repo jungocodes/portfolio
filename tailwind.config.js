@@ -8,7 +8,7 @@ module.exports = {
       // Build your palette here
       default: '#333333',
       primaryColor: '#e3e3e3',
-      secondaryColor: '#c60021',
+      secondaryColor: '#452475',
       mainAccent:'#f6f6f8',
       accentColor: '#bdbcbd',
 

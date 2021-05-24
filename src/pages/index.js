@@ -22,7 +22,7 @@ function IndexPage() {
           </h1>
           <h4 className="py-2 tracking-wider">Front-End Developer</h4>
           <div class="w-12 h-1 bg-secondaryColor rounded mt-2 mb-4 mx-auto xl:m-0"></div>
-          <p className="leading-normal text-lg lg:m-8 xl:m-0 xl:pt-2 2xl:my-4">
+          <p className="leading-normal text-lg mb-4 lg:-mb-4 xl:mt-2 xl:mb-2 xl:pt-2 2xl:my-4">
             Meggings portland fingerstache lyft, post-ironic fixie m mi umami.
           </p>
           <p className="leading-normal text-lg lg:m-8 xl:m-0 xl:pt-2">
@@ -33,13 +33,13 @@ function IndexPage() {
             normcore meh butcher.
           </p>
 
-          <div className="mt-4 flex justify-evenly text-xl lg:w-8/12 lg:mx-auto xl:justify-start 2xl:w-full">
+          <div className=" mt-4 flex justify-evenly text-xl lg:w-8/12 lg:mx-auto xl:justify-start xl:mt-6 2xl:w-full">
           <Link
             to="http://twitter.com/"
             target="_blank"
             alt="Twitter Profile"
             title="Twitter"
-            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 2xl:mr-6"
+            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 xl:mr-4  2xl:mr-6"
           >
             <FaTwitter />
           </Link>{" "}
@@ -47,7 +47,7 @@ function IndexPage() {
             to="http://linkedin.com/"
             target="_blank"
             title="Linkedin"
-            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 2xl:mr-6"
+            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 xl:mr-4 2xl:mr-6"
           >
             <FaLinkedinIn/>
           </Link>{" "}
@@ -55,7 +55,7 @@ function IndexPage() {
             to="http://facebook.com/"
             target="_blank"
             title="Facebook"
-            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 2xl:mr-6"
+            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 xl:mr-4  2xl:mr-6"
           >
             <FaFacebookF />
           </Link>{" "}
@@ -63,7 +63,7 @@ function IndexPage() {
             to="http://instagram.com/"
             target="_blank"
             title="Instagram"
-            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 2xl:mr-6"
+            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 xl:mr-4  2xl:mr-6"
           >
             <FaInstagram />
           </Link>{" "}
@@ -71,7 +71,7 @@ function IndexPage() {
             to="http://github.com/"
             target="_blank"
             title="Github"
-            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 2xl:mr-6"
+            className="rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 xl:mr-4  2xl:mr-6"
           >
             <FaGithubAlt />
           </Link>{" "}
@@ -79,7 +79,7 @@ function IndexPage() {
             to="http://semicolon.dev/"
             target="_blank"
             title="Semicolon"
-            className=" rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 2xl:mr-6"
+            className=" rounded-full bg-accentColor p-2 text-mainAccent lg:hover:bg-secondaryColor lg:hover:text-mainAccent lg:mr-2 xl:mr-4  2xl:mr-6"
           >
             <FaTerminal />
           </Link>{" "}
