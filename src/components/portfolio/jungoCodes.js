@@ -45,7 +45,7 @@ const jungoCodes = () => {
           <FaEye className='mr-3 text-lg'/>Live
         </Link>
         <Link
-          to="http://linkedin.com/"
+          to="/about-jungo-codes"
           target="_blank"
           title="About Project"
           className=" p-2 text-mainAccent flex items-center uppercase lg:hover:text-accentColor"
