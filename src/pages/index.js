@@ -23,15 +23,11 @@ function IndexPage() {
           <h4 className="py-2 tracking-wider">Front-End Developer</h4>
           <div class="w-12 h-1 bg-secondaryColor rounded mt-2 mb-4 mx-auto xl:m-0"></div>
           <p className="leading-normal text-lg mb-4 lg:-mb-4 xl:mt-2 xl:mb-2 xl:pt-2 2xl:my-4">
-            Meggings portland fingerstache lyft, post-ironic fixie m mi umami.
+            Meggings portland fingerstache lyft.
           </p>
-          <p className="leading-normal text-lg lg:m-8 xl:m-0 xl:pt-2">
-            Meggings portland fingerstache lyft, post-ironic fixie m mi umami
-            everyday carry hexagon locavore art party. Locavore small batch
-            listicle g m-to-table lumbersexual salvia messenger g book flannel
-            truffaut craft beer drinking vinegar sartorial, disrupt fashion axe
-            normcore meh butcher.
-          </p>
+          <p className="py-6">
+				👋 Welcome fellow <a className="text-green-500 no-underline hover:underline" href="https://www.tailwindcss.com">Tailwind CSS</a> and miminal monochrome blog fan. This starter template provides a starting point to create your own minimal monochrome blog using Tailwind CSS and vanilla Javascript.
+			</p>
 
           <div className=" mt-4 flex justify-evenly text-xl lg:w-8/12 lg:mx-auto xl:justify-start xl:mt-6 2xl:w-full">
           <Link

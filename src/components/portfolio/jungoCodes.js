@@ -14,7 +14,7 @@ const jungoCodes = () => {
     <article className="bg-mainAccent overflow-hidden rounded-lg shadow-lg">
 
 
-            <img alt="Placeholder" className="block h-auto lg:h-96 w-full" src="https://picsum.photos/600/400/?random"/>
+            <img alt="Placeholder" className="block h-auto  w-full" src="https://picsum.photos/600/400/?random"/>
 
 
         <header className="flex items-center justify-between leading-tight p-4 md:p-6">
