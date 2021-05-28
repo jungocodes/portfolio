@@ -10,8 +10,8 @@ import MainContact from '../components/mainContact'
 
 function IndexPage() {
   return (
-    <div className='font-sans sm:container sm:w-11/12 sm:mx-auto  lg:mt-10 lg:py-6 lg:px-6  ' id='back-top'>
-    <div className="flex flex-col lg:mx-auto xl:flex-row xl:items-center xl:w-10/12 xl:p-10 ">
+    <div className='font-sans sm:container sm:w-11/12 sm:mx-auto  lg:mt-10 lg:py-6 lg:px-6   ' id='back-top'>
+    <div className="flex flex-col lg:mx-auto  xl:flex-row xl:items-center xl:w-10/12 xl:p-10 ">
       {/* About Content */}
        <div className="order-last mx-4 text-center -mt-4  ">
         <h1 className='text-4xl font-bold tracking-wider lg:mt-0
@@ -87,7 +87,7 @@ function IndexPage() {
       </div>
 
       <div className="mx-auto xl:mt-12">
-        <StaticImage className='lg:w-72 xl:w-96' src='../images/Shadow.png' />
+        <StaticImage className='lg:w-72 xl:w-96' src='../images/profile.png' />
       </div>
 
 

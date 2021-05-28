@@ -1,5 +1,6 @@
 import * as React from "react"
 import  {Link}  from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { FaReadme, FaEye, FaGithubAlt } from "react-icons/fa";
 
 const ClientTwo = () => {
@@ -13,7 +14,7 @@ const ClientTwo = () => {
             <article className="bg-mainAccent overflow-hidden rounded-lg shadow-lg">
 
 
-                    <img alt="Placeholder" className="block h-auto w-full lg:h-60" src="https://picsum.photos/600/400/?random"/>
+                    <StaticImage alt="Placeholder" className="block h-auto w-full lg:h-60" src="https://picsum.photos/600/400/?random"/>
 
 
                 <header className="flex items-center justify-between leading-tight p-4 md:p-6">

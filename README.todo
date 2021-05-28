@@ -1,0 +1,14 @@
+TODO:
+    ☐ Design the 404 page
+    ☐ Develop a Portfolio page for all projects
+    ☐ Uppload projects to main page
+    ☐ Make Contact forms functional
+    ☐ Clean package.jsom from unused packages
+    ✔ Remove unused photos from production @done(21-05-28 12:04)
+    ☐ Add comments
+    ☐ Add alt, meta information
+
+FIXME:
+    ☐ Fix Back to Home and Back to top on mobile views
+    ☐ Change profile image
+    ☐ Flip profile image and profile content

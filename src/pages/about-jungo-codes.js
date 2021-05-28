@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import {
   FaArrowLeft,
   FaFacebookF,
@@ -16,11 +17,7 @@ const JungoArticle = () => (
 
 
 	<div className="container w-full md:max-w-3xl mx-auto pt-20 font-sans leading-normal tracking-normal">
-  <img
-          alt="Placeholder"
-          className="block w-full h-auto lg:h-96 "
-          src="https://picsum.photos/600/400/?random"
-        />
+  <StaticImage alt="Placeholder" className="block h-auto w-full" src='../../images/JungoCodes.png'/>
 
 		<div className="w-full px-4 mt-4 md:px-6 text-xl text-gray-800 leading-normal">
 

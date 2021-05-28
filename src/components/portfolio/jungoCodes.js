@@ -1,9 +1,8 @@
 import * as React from "react"
 import  {Link}  from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { FaReadme, FaEye, FaGithubAlt } from "react-icons/fa";
 
-// Images
-import JungoCodes from '../../images/JungoCodes.png'
 
 const jungoCodes = () => {
     return (
@@ -17,7 +16,7 @@ const jungoCodes = () => {
     <article className="bg-mainAccent overflow-hidden rounded-lg shadow-lg">
 
 
-            <img alt="Placeholder" className="block h-auto w-full" src={JungoCodes}/>
+            <StaticImage alt="Placeholder" className="block h-auto w-full" src='../../images/ProjectJungo.png'/>
 
 
         <header className="flex items-center justify-between leading-tight p-4 md:p-6">
