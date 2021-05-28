@@ -68,7 +68,7 @@ const JungoArticle = () => (
         <h3 className="font-bold break-normal text-lg ">Let's create</h3>
 				<h2 className="font-bold break-normal text-4xl ">Work Together</h2>
 				<div className="w-full text-center pt-4">
-        <Link className="flex-1 mt-4 block w-6/12 mx-auto md:inline-block appearance-none bg-accentColor text-secondaryColor text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">Hire Me</Link>
+        <Link to='/contact' className="flex-1 mt-4 block w-6/12 mx-auto md:inline-block appearance-none bg-accentColor text-secondaryColor text-base font-semibold tracking-wider uppercase py-4 rounded shadow lg:hover:bg-secondaryColor lg:hover:text-mainAccent">Hire Me</Link>
 				</div>
         <div className=" mt-8 flex justify-evenly text-xl lg:w-8/12 lg:mx-auto xl:justify-evenly xl:mt-6 xl:mb-4 2xl:w-full">
           <Link

@@ -4,7 +4,7 @@ import { FaReadme, FaEye, FaGithubAlt } from "react-icons/fa";
 
 const ClientThree = () => {
     return (
-        <div className="flex flex-wrap -mx-1  lg:w-3/6 xl:ml-2">
+        <div className="font-sans flex flex-wrap -mx-1  lg:w-3/6 xl:ml-2">
 
 
 <div className=" my-1 px-1 w-full lg:my-4 lg:px-4 ">
