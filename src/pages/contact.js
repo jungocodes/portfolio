@@ -23,7 +23,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
-          <form netlify className="flex flex-wrap -m-2">
+          <form name='contact-page' netlify netlify-honeypot="bot-field" hidden className="flex flex-wrap -m-2">
             <div className="p-2 w-1/2">
               <div class="relative">
                 <input
