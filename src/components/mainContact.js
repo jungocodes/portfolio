@@ -11,33 +11,33 @@ import {
 } from "react-icons/fa"
 const MainContact = () => {
     return (
-        <div class="font-sans  body-font relative">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-12">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Tell me about your needs, and let's start working together on the best solution for your users and business.</p>
+        <div className="font-sans  body-font relative">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-col text-center w-full mb-12">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Tell me about your needs, and let's start working together on the best solution for your users and business.</p>
     </div>
-    <div class="lg:w-1/2 md:w-2/3 mx-auto">
-      <div class="flex flex-wrap -m-2">
-        <div class="p-2 w-1/2">
+    <div className="lg:w-1/2 md:w-2/3 mx-auto">
+      <form name='contact' netlify className="flex flex-wrap -m-2">
+        <div className="p-2 w-1/2">
           <div class="relative">
             <input type="text" id="name" name="name" placeholder='Your Name' class="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
         </div>
-        <div class="p-2 w-1/2">
+        <div className="p-2 w-1/2">
           <div class="relative">
             <input type="email" id="email" name="email"  placeholder="Email Address"class="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
         </div>
-        <div class="p-2 w-full">
+        <div className="p-2 w-full">
           <div class="relative">
             <textarea id="message" name="message"  placeholder="Budget, deadlines, special requirements, extra details..." class="w-full h-44 bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
           </div>
         </div>
-        <div class="p-2 w-full">
+        <div className="p-2 w-full">
           <button type='submit' class="flex mx-auto text-mainAccent bg-secondaryColor py-2 px-8 focus:outline-none hover:bg-accentColor hover:text-secondaryColor rounded text-lg">Button</button>
         </div>
-        <div class="p-2 w-full pt-8 mt-8 border-t border-secondaryColor text-center">
+        <div className="p-2 w-full pt-8 mt-8 border-t border-secondaryColor text-center">
         <Link
                 to="#back-top"
                 className="w-3/12 text-base flex items-center md:text-sm text-green-500 font-bold no-underline hover:underline"
@@ -101,7 +101,7 @@ const MainContact = () => {
 </span> 2021 All Rights Reserved. Developed by Jungo Codes.
           </p>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>
