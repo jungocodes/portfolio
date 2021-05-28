@@ -11,20 +11,20 @@ import {
 } from "react-icons/fa"
 const Contact = () => {
   return (
-    <div class="font-sans  body-font relative">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-12">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+    <div className="font-sans  body-font relative">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-12">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
             Contact Me
           </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Tell me about your needs, and let's start working together on the
             best solution for your users and business.
           </p>
         </div>
-        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <div class="flex flex-wrap -m-2">
-            <div class="p-2 w-1/2">
+        <div className="lg:w-1/2 md:w-2/3 mx-auto">
+          <form netlify className="flex flex-wrap -m-2">
+            <div className="p-2 w-1/2">
               <div class="relative">
                 <input
                   type="text"
@@ -35,7 +35,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div class="p-2 w-1/2">
+            <div className="p-2 w-1/2">
               <div class="relative">
                 <input
                   type="email"
@@ -46,7 +46,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div class="p-2 w-full">
+            <div className="p-2 w-full">
               <div class="relative">
                 <textarea
                   id="message"
@@ -56,7 +56,7 @@ const Contact = () => {
                 ></textarea>
               </div>
             </div>
-            <div class="p-2 w-full">
+            <div className="p-2 w-full">
               <button
                 type="submit"
                 class="flex mx-auto text-mainAccent bg-secondaryColor py-2 px-8 focus:outline-none hover:bg-accentColor hover:text-secondaryColor rounded text-lg"
@@ -64,7 +64,7 @@ const Contact = () => {
                 Button
               </button>
             </div>
-            <div class="p-2 w-full pt-8 mt-8 border-t border-secondaryColor text-center">
+            <div className="p-2 w-full pt-8 mt-8 border-t border-secondaryColor text-center">
               <Link
                 to="/"
                 className="w-2/12 text-base flex items-center md:text-sm text-green-500 font-bold no-underline hover:underline"
@@ -72,7 +72,7 @@ const Contact = () => {
 
                 <FaArrowLeft className="mr-2" /> Back Home
               </Link>
-              <p class="leading-normal my-5">
+              <p className="leading-normal my-5">
                 49 Smith St.
                 <br />
                 Saint Cloud, MN 56301
@@ -129,7 +129,7 @@ const Contact = () => {
                 </Link>{" "}
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
