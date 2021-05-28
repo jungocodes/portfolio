@@ -17,7 +17,7 @@ const JungoArticle = () => (
 
 
 	<div className="container w-full md:max-w-3xl mx-auto pt-20 font-sans leading-normal tracking-normal">
-  <StaticImage alt="Placeholder" className="block h-auto w-full" src='../../images/JungoCodes.png'/>
+  <StaticImage alt="Placeholder" className="block h-auto w-full" src='../images/ProjectJungo.png'/>
 
 		<div className="w-full px-4 mt-4 md:px-6 text-xl text-gray-800 leading-normal">
 
