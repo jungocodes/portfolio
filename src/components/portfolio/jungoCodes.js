@@ -53,7 +53,7 @@ const jungoCodes = () => {
           title="About Project"
           className=" p-2 text-mainAccent flex items-center uppercase lg:hover:text-accentColor"
         >
-          <FaReadme className='mr-3 text-lg '/>Read
+          <FaReadme className='mr-3 text-lg'/>Read
         </Link>
         </footer>
 

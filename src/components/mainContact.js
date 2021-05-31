@@ -49,23 +49,23 @@ const MainContact = () => {
       <form name='main-contact' method='post' data-netlify='true' data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}  action="/thanks/"className="flex flex-wrap -m-2">
         <div className="p-2 w-1/2">
-          <div class="relative">
+          <div className="relative">
           <input type="hidden" name="form-name" value="contact" />
         <p hidden>
           <label>
             Don’t fill this out: <input name="bot-field" onChange={handleChange} />
           </label>
         </p>
-            <input type="text" id="name" name="name"  onChange={handleChange}  placeholder='Your Name' class="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+            <input type="text" id="name" name="name"  onChange={handleChange}  placeholder='Your Name' className="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
         </div>
         <div className="p-2 w-1/2">
-          <div class="relative">
-            <input type="email" id="email" name="email"  onChange={handleChange}   placeholder="Email Address"class="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+          <div className="relative">
+            <input type="email" id="email" name="email"  onChange={handleChange}   placeholder="Email Address"className="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
           </div>
         </div>
         <div className="p-2 w-full">
-          <div class="relative">
+          <div className="relative">
             <textarea id="message" name="message"  onChange={handleChange}  placeholder="Budget, deadlines, special requirements, extra details..." class="w-full h-44 bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
           </div>
         </div>

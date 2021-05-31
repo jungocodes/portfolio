@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { navigate } from 'gatsby-link'
 import {
   FaArrowLeft,
   FaFacebookF,
@@ -9,7 +10,35 @@ import {
   FaGithubAlt,
   FaTerminal,
 } from "react-icons/fa"
+
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
 const Contact = () => {
+
+  const [state, setState] = React.useState({})
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch((error) => alert(error))
+  }
+
   return (
     <div className="font-sans  body-font relative">
       <div className="container px-5 py-24 mx-auto">
@@ -23,43 +52,52 @@ const Contact = () => {
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
-          <form name='contact-page' netlify netlify-honeypot="bot-field" hidden className="flex flex-wrap -m-2">
+          <form name='contact-page' netlify netlify-honeypot="bot-field" hidden onSubmit={handleSubmit}  action="/thanks/" className="flex flex-wrap -m-2">
             <div className="p-2 w-1/2">
               <div class="relative">
+              <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+        </p>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Your Name"
-                  class="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  onChange={handleChange}
+                  className="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
             <div className="p-2 w-1/2">
-              <div class="relative">
+              <div className="relative">
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Email Address"
+                  onChange={handleChange}
                   class="w-full bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
             <div className="p-2 w-full">
-              <div class="relative">
+              <div className="relative">
                 <textarea
                   id="message"
                   name="message"
                   placeholder="Budget, deadlines, special requirements, extra details..."
-                  class="w-full h-44 bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  onChange={handleChange}
+                  className="w-full h-44 bg-accentColor bg-opacity-50 rounded focus:ring-2 focus:ring-secondaryColor text-base outline-none text-default py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>
             <div className="p-2 w-full">
               <button
                 type="submit"
-                class="flex mx-auto text-mainAccent bg-secondaryColor py-2 px-8 focus:outline-none hover:bg-accentColor hover:text-secondaryColor rounded text-lg"
+                className="flex mx-auto text-mainAccent bg-secondaryColor py-2 px-8 focus:outline-none hover:bg-accentColor hover:text-secondaryColor rounded text-lg"
               >
                 Button
               </button>
@@ -72,11 +110,6 @@ const Contact = () => {
 
                 <FaArrowLeft className="mr-2" /> Back Home
               </Link>
-              <p className="leading-normal my-5">
-                49 Smith St.
-                <br />
-                Saint Cloud, MN 56301
-              </p>
               <div className=" mt-8 flex justify-evenly text-xl lg:w-8/12 lg:mx-auto xl:justify-evenly xl:mt-6 xl:mb-4 2xl:w-full">
                 <Link
                   to="http://twitter.com/"
@@ -128,6 +161,9 @@ const Contact = () => {
                   <FaTerminal />
                 </Link>{" "}
               </div>
+              <p class="leading-normal my-5"><span>&copy;
+</span> 2021 All Rights Reserved. Developed by Jungo Codes.
+          </p>
             </div>
           </form>
         </div>

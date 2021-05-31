@@ -33,7 +33,7 @@ const JungoArticle = () => (
 
 			{/* <!--Lead Para--> */}
 			<p className="py-6">
-				👋 Welcome fellow <a className="text-green-500 no-underline hover:underline" href="https://www.tailwindcss.com">Tailwind CSS</a> and miminal monochrome blog fan. This starter template provides a starting point to create your own minimal monochrome blog using Tailwind CSS and vanilla Javascript.
+				👋 Welcome fellow <Link className="text-green-500 no-underline hover:underline" to="https://www.tailwindcss.com">Tailwind CSS</Link> and miminal monochrome blog fan. This starter template provides a starting point to create your own minimal monochrome blog using Tailwind CSS and vanilla Javascript.
 			</p>
 
 			<p className="py-6">The basic blog page layout is available and all using the default Tailwind CSS classes (although there are a few hardcoded style tags). If you are going to use this in your project, you will want to convert the classes into components.</p>
