@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react'
 
 
 import JungoCodes from './jungoCodes'
@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
 
 
-<div class="mt-8 lg:w-full xl:w-11/12 xl:mx-auto ">
+<div className='mt-8 lg:w-full xl:w-11/12 xl:mx-auto '>
 
     {/* Client 1*/}
     <JungoCodes/>
